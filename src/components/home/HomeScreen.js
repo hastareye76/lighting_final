@@ -4,6 +4,7 @@ import { ImageConstants } from '../../constants/ImageConstants'
 import { SideNavBar } from './sideNavBar/SideNavBar'
 import { trView } from './mainviews/trView'
 import { flexboxView } from './mainviews/flexboxView'
+import { ContainerInCompView } from './mainviews/ContainerInCompView'
 
 /**
  *
@@ -47,9 +48,13 @@ export class HomeScreen extends Lightning.Component {
         visible: false,
       },
       ContainerAniView: {
+        /*
         x: 900,
         y: 500,
         text: { text: 'To be Implemented for ContainerAniView' },
+        visible: false,
+        */
+        type: ContainerInCompView,
         visible: false,
       },
       SeminarAniView: {
@@ -222,11 +227,10 @@ export class HomeScreen extends Lightning.Component {
           this.tag('SideNavBar')._highlight()
         }
 
-        /*
         _getFocused() {
-          return this.tag("ContainerAniView");
+          return this.tag('ContainerAniView')
         }
-        */
+
         _handleLeft() {
           this._setState('SideNavState')
         }

@@ -106,8 +106,8 @@ export class trView extends Lightning.Component {
   /**
    * @static
    * @returns
-   * @memberof GalleryView
-   * GalleryView States
+   * @memberof trView
+   * trView States
    */
   static _states() {
     return [
