@@ -1,0 +1,8 @@
+추가적인 라이브러리를 사용하기 위해서
+"ThunderJS": "github:rdkcentral/ThunderJS"
+를 package.json 의
+devDependencies 항목에 넣었다.
+
+새로운 패키지를 추가로 다운로드 하려면
+npm install -> lng dev
+를 해주면 ThunderJS라는 모듈을 다운로드 받을 수 있다.
